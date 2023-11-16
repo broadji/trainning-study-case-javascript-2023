@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <!-- Input untuk username -->
+        <label for="username">Username: </label>
+        <input type="text" id="username" />
+    </div>
+
+    <div id="products">
+        <h2>Produk</h2>
+        <!-- Daftar produk akan dibuat secara dinamis di sini -->
+    </div>
+
+    <div id="cart">
+        <h2>Keranjang</h2>
+        <div id="cart-items"></div>
+        <!-- Menampilkan total harga, ongkos kirim, diskon, total diskon, dan total pembayaran -->
+        <p>Total Harga: $<span id="total"></span></p>
+        <p>Ongkos Kirim: $<span id="shippingCost">5</span></p>
+        <p>Diskon: $<span id="discount">0</span></p>
+        <p>Total Diskon: $<span id="totalDiscount">0</span></p>
+        <p>Total Pembayaran: $<span id="grandTotal"></span></p>
+        <!-- Tombol Checkout -->
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
